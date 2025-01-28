@@ -5,7 +5,7 @@
       (desk_caddy_init_region
           (:target study_table)
           (:ranges (
-              (-0.21000000000000002 -0.15000000000000002 -0.19 -0.13)
+              (-0.23000000000000002 -0.17000000000000002 -0.17 -0.11)
             )
           )
           (:yaw_rotation (
@@ -24,21 +24,10 @@
             )
           )
       )
-      (white_yellow_mug_init_region
-          (:target study_table)
-          (:ranges (
-              (0.07500000000000001 -0.025 0.125 0.025)
-            )
-          )
-          (:yaw_rotation (
-              (0.0 0.0)
-            )
-          )
-      )
       (desk_caddy_right_region
           (:target study_table)
           (:ranges (
-              (-0.25 0.09999999999999999 -0.15000000000000002 0.2)
+              (-0.27 0.07999999999999999 -0.13000000000000002 0.22)
             )
           )
           (:yaw_rotation (
@@ -67,7 +56,6 @@
 
   (:objects
     black_book_1 - black_book
-    white_yellow_mug_1 - white_yellow_mug
   )
 
   (:obj_of_interest
@@ -78,7 +66,6 @@
   (:init
     (On desk_caddy_1 study_table_desk_caddy_init_region)
     (On black_book_1 study_table_black_book_init_region)
-    (On white_yellow_mug_1 study_table_white_yellow_mug_init_region)
   )
 
   (:goal
