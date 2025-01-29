@@ -5,7 +5,7 @@
       (plate_left_region
           (:target living_room_table)
           (:ranges (
-              (-0.045 -0.345 0.045 -0.25499999999999997)
+              (-0.055 -0.355 0.055 -0.24499999999999997)
             )
           )
           (:yaw_rotation (
@@ -16,7 +16,7 @@
       (plate_right_region
           (:target living_room_table)
           (:ranges (
-              (-0.045 0.25499999999999997 0.045 0.345)
+              (-0.055 0.24499999999999997 0.055 0.355)
             )
           )
           (:yaw_rotation (
@@ -27,18 +27,18 @@
       (porcelain_mug_init_region
           (:target living_room_table)
           (:ranges (
-              (-0.145 -0.195 -0.05500000000000001 -0.105)
+              (-0.155 -0.205 -0.04500000000000001 -0.095)
             )
           )
           (:yaw_rotation (
-              (0.0 0.0)
+              (0.0 0.5)
             )
           )
       )
       (white_yellow_mug_init_region
           (:target living_room_table)
           (:ranges (
-              (-0.09500000000000001 0.05500000000000001 -0.005 0.145)
+              (-0.10500000000000001 0.04500000000000001 0.005 0.155)
             )
           )
           (:yaw_rotation (

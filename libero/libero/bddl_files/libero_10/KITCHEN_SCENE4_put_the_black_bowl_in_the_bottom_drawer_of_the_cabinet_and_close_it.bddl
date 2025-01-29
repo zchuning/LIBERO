@@ -5,7 +5,7 @@
       (white_cabinet_init_region
           (:target kitchen_table)
           (:ranges (
-              (-0.03 0.27 0.03 0.33)
+              (-0.04 0.26 0.04 0.34)
             )
           )
           (:yaw_rotation (
@@ -16,29 +16,18 @@
       (wine_rack_init_region
           (:target kitchen_table)
           (:ranges (
-              (-0.13 -0.33 -0.07000000000000001 -0.27)
+              (-0.14 -0.34 -0.06000000000000001 -0.26)
             )
           )
           (:yaw_rotation (
-              (3.141592653589793 3.141592653589793)
+              (1.57079632679 3.141592653589793)
             )
           )
       )
       (akita_black_bowl_init_region
           (:target kitchen_table)
           (:ranges (
-              (-0.0149999999999999975 -0.09500000000000001 0.075 -0.005)
-            )
-          )
-          (:yaw_rotation (
-              (0.0 0.0)
-            )
-          )
-      )
-      (wine_bottle_init_region
-          (:target kitchen_table)
-          (:ranges (
-              (-0.195 0.005 -0.105 0.09500000000000001)
+              (-0.0249999999999999975 -0.10500000000000001 0.085 0.005)
             )
           )
           (:yaw_rotation (
@@ -71,7 +60,6 @@
 
   (:objects
     akita_black_bowl_1 - akita_black_bowl
-    wine_bottle_1 - wine_bottle
   )
 
   (:obj_of_interest
@@ -81,7 +69,6 @@
 
   (:init
     (On akita_black_bowl_1 kitchen_table_akita_black_bowl_init_region)
-    (On wine_bottle_1 kitchen_table_wine_bottle_init_region)
     (On white_cabinet_1 kitchen_table_white_cabinet_init_region)
     (On wine_rack_1 kitchen_table_wine_rack_init_region)
     (Open white_cabinet_1_bottom_region)

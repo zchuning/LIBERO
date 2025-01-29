@@ -5,7 +5,7 @@
       (basket_init_region
           (:target living_room_table)
           (:ranges (
-              (-0.03 0.22 0.03 0.29)
+              (-0.04 0.21 0.04 0.30)
             )
           )
           (:yaw_rotation (
@@ -16,7 +16,7 @@
       (alphabet_soup_init_region
           (:target living_room_table)
           (:ranges (
-              (0.005 -0.145 0.09500000000000001 -0.05500000000000001)
+              (-0.005 -0.155 0.10500000000000001 -0.04500000000000001)
             )
           )
           (:yaw_rotation (
@@ -27,7 +27,7 @@
       (cream_cheese_init_region
           (:target living_room_table)
           (:ranges (
-              (-0.195 0.014999999999999996 -0.105 0.10499999999999999)
+              (-0.205 0.004999999999999996 -0.095 0.11499999999999999)
             )
           )
           (:yaw_rotation (
