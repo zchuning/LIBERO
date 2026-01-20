@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import robosuite as suite
+from robosuite import load_part_controller_config
 import matplotlib.cm as cm
 
 from robosuite.utils.errors import RandomizationError
@@ -44,7 +45,26 @@ class ControlEnv:
             bddl_file_name
         ), f"[error] {bddl_file_name} does not exist!"
 
-        controller_configs = suite.load_controller_config(default_controller=controller)
+        part_config = load_part_controller_config(default_controller=controller)
+
+        # Update for robosuite >= 1.5.0 which requires composite controller configuration
+        # We assume standard single-arm robot (like Panda) with "right" arm
+        if "type" in part_config and part_config["type"] in [
+            "JOINT_VELOCITY",
+            "JOINT_TORQUE",
+            "JOINT_POSITION",
+            "OSC_POSITION",
+            "OSC_POSE",
+            "IK_POSE",
+        ]:
+            controller_configs = {
+                "type": "BASIC",
+                "body_parts": {"right": part_config},
+            }
+            # Add gripper config
+            controller_configs["body_parts"]["right"]["gripper"] = {"type": "GRIP"}
+        else:
+            controller_configs = part_config
 
         problem_info = BDDLUtils.get_problem_info(bddl_file_name)
         # Check if we're using a multi-armed environment and use env_configuration argument if so
