@@ -11,10 +11,21 @@ with open(path.join(this_directory, "./README.md"), encoding="utf-8") as f:
 lines = [x for x in lines if ".png" not in x]
 long_description = "".join(lines)
 
+
+def read_requirements():
+    with open(path.join(this_directory, "requirements.txt"), encoding="utf-8") as f:
+        requirements = [
+            line.strip()
+            for line in f
+            if line.strip() and not line.strip().startswith("#")
+        ]
+    return requirements
+
+
 setup(
     name="libero",
     packages=[package for package in find_packages() if package.startswith("libero")],
-    install_requires=[],
+    install_requires=read_requirements(),
     eager_resources=["*"],
     include_package_data=True,
     python_requires=">=3",
